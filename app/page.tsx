@@ -35,7 +35,7 @@ export default function Home() {
                 <div>
                   <h1>Hakika</h1>
                   <p className="meaning">Swahili for “to be sure.” Be sure of what’s in your jar.</p>
-                  <p className="lead">Cashew butter made in small batches from Tanzanian cashews.</p>
+                  <p className="lead">Cashew butter made in small batches from East African cashews.</p>
                   <div className="actions">
                     <a className="btn" href="#order">Order a jar</a>
                     <a className="btn ghost" href="#story">Our story</a>
@@ -67,10 +67,10 @@ export default function Home() {
 
         <section className="story" id="story">
           <div className="wrap">
-            <h2>Made in our kitchen</h2>
+            <h2>Made With Love</h2>
             <div>
               <p>Hakika started small, in a home kitchen, with one idea: cashew butter you can be sure about.</p>
-              <p>Our cashews come from Tanzania. We prepare them in small batches and jar them ourselves, so every jar gets real attention.</p>
+              <p>Our cashews come from Tanzania and Coastal Kenya. Our small team prepares them in small batches and jar them ourselves, so every one gets real attention.</p>
               <p>The name blends ours: the founder’s and his wife’s, with an H added. It also means “to be sure” in Swahili, which is the promise we make with every jar.</p>
             </div>
           </div>
@@ -98,7 +98,7 @@ export default function Home() {
 
       <footer>
         <div className="wrap">
-          <span>© {new Date().getFullYear()} Hakika Foods. Made in Kenya with Tanzanian cashews.</span>
+          <span>© {new Date().getFullYear()} Hakika Foods. Made in Kenya with Kenyan and Tanzanian cashews.</span>
           <a href={waLink("Hello Hakika, I have a question.")}>WhatsApp us</a>
         </div>
       </footer>

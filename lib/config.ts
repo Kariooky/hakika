@@ -19,11 +19,13 @@ export const waLink = (text: string) =>
 /* Photo slots. Put files in /public/images, then set the path here.
    null = fall back to the CSS jar / plain hero. */
 export const IMAGES: {
+  logo: string | null;
   heroBg: string | null;
   heroJar: string | null;
   jars: Record<string, string | null>;
 } = {
-  heroBg: "/images/hero-bg.jpg",
+  logo: "/images/logo.svg",
+  heroBg: null, // e.g. "/images/hero-bg.jpg"
   heroJar: "/images/hero-jar.jpg",
   jars: {
     "370": null, // e.g. "/images/jar-370.png"

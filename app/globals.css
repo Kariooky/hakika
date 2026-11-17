@@ -105,3 +105,26 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.6rem
 .size .jar-photo{margin-inline:0}
 .hero.has-bg{background-color:var(--leaf);background-size:cover;background-position:center;padding:4.5rem 0 5.5rem}
 @media (max-width:760px){.hero.has-bg{padding:2.5rem 0 3rem}}
+
+/* logo: set IMAGES.logo in lib/config.ts */
+.logo{display:inline-flex;align-items:center;gap:.6rem}
+.logo img,.foot img{display:block}
+.logo img{width:44px;height:44px}
+.foot{display:inline-flex;align-items:center;gap:.7rem}
+.foot img{width:44px;height:44px}
+.cloth{position:relative}
+.hero{padding-bottom:5.5rem}
+/* seal straddling the bottom edge of the cloth; tweak these numbers to taste */
+.stamp{position:absolute;left:50%;bottom:-70px;width:150px;height:150px;margin-left:-75px;transform:rotate(-8deg);filter:drop-shadow(0 6px 0 rgba(59,31,20,.3))}
+@media (max-width:760px){
+  .stamp{left:auto;right:14px;margin-left:0;bottom:auto;top:-40px;width:100px;height:100px}
+}
+
+/* story */
+.story .wrap{grid-template-columns:.8fr 1.2fr;align-items:start}
+.story h2{position:sticky;top:2rem}
+.prose p{max-width:58ch}
+.prose .lede{font-size:1.3rem;font-weight:600}
+.prose .pull{font:400 clamp(1.6rem,3.5vw,2.1rem)/1.2 var(--display);color:var(--apple);margin:1.8rem 0}
+.prose .sign{font:400 1.5rem/1.3 var(--display);color:var(--roast);border-top:4px solid var(--apple);padding-top:1.2rem;margin-top:2rem}
+@media (max-width:760px){.story h2{position:static}}

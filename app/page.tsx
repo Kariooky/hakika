@@ -14,7 +14,10 @@ export default function Home() {
     <>
       <header>
         <div className="wrap nav">
-          <a className="logo" href="#top">Hakika Foods</a>
+          <a className="logo" href="#top">
+            {IMAGES.logo && <img src={IMAGES.logo} alt="" width={40} height={40} />}
+            Hakika Foods
+          </a>
           <nav>
             <a href="#story">Our story</a>
             <a href="#uses">Ways to eat it</a>
@@ -47,6 +50,9 @@ export default function Home() {
                 <span lang="sw">Hakika ni tamu</span>
                 <small>Truly, it’s delicious.</small>
               </p>
+              {IMAGES.logo && (
+                <img className="stamp" src={IMAGES.logo} alt="Hakika Foods stamp" width={130} height={130} />
+              )}
             </div>
           </div>
         </section>
@@ -67,11 +73,21 @@ export default function Home() {
 
         <section className="story" id="story">
           <div className="wrap">
-            <h2>Made With Love</h2>
-            <div>
-              <p>Hakika started small, in a home kitchen, with one idea: cashew butter you can be sure about.</p>
-              <p>Our cashews come from Tanzania and Coastal Kenya. Our small team prepares them in small batches and jar them ourselves, so every one gets real attention.</p>
-              <p>The name blends ours: the founder’s and his wife’s, with an H added. It also means “to be sure” in Swahili, which is the promise we make with every jar.</p>
+            <h2>A Little Kitchen, A Lot of Love.</h2>
+            <div className="prose">
+              <p className="lede">Every good thing has a beginning. Ours began with our first baby, who was just eight months old.</p>
+              <p>As new parents, we were discovering the world of introducing our little one to different nuts and seeds. We wanted to make a simple cashew powder that we could incorporate into his meals. One day, my husband decided to put the cashews into a blender, expecting to get just that.</p>
+              <p>But something unexpected happened.</p>
+              <p className="pull">Instead of powder, we got cashew butter!</p>
+              <p>What started as a little kitchen experiment quickly became one of our favourite discoveries. We began exploring all the wonderful ways we could enjoy it. On toast, stirred into porridge, blended into smoothies, added to recipes or simply enjoyed by the spoonful. Before long, cashew butter had become a staple in our home.</p>
+              <p>And somewhere along the way, we realised that this little discovery was something worth sharing.</p>
+              <p>We thought about other families, other kitchens and all the little moments around food that bring people together. We wanted more people to experience the simple goodness of cashews in a way that was honest, wholesome and delicious.</p>
+              <p className="pull">And so, Hakika was born.</p>
+              <p>What began with two parents trying something new for their baby grew into a passion to share something we genuinely loved with the world.</p>
+              <p>Today, we bring that same love and intention into every jar. We celebrate the goodness of Tanzanian and coastal Kenyan cashews, carefully prepared in small batches, with attention to what goes into every product and, most importantly, what goes onto your family’s table.</p>
+              <p>For us, Hakika is more than cashew butter. It is a reminder that sometimes the most beautiful things come from the simplest beginnings.</p>
+              <p className="pull">A little curiosity. A happy accident. A kitchen filled with love.</p>
+              <p className="sign">From our family kitchen to yours, Hakika. Made with love. Made with certainty.</p>
             </div>
           </div>
         </section>
@@ -98,7 +114,10 @@ export default function Home() {
 
       <footer>
         <div className="wrap">
-          <span>© {new Date().getFullYear()} Hakika Foods. Made in Kenya with Kenyan and Tanzanian cashews.</span>
+          <span className="foot">
+            {IMAGES.logo && <img src={IMAGES.logo} alt="" width={44} height={44} />}
+            © {new Date().getFullYear()} Hakika Foods. Made in Kenya with Kenyan and Tanzanian cashews.
+          </span>
           <a href={waLink("Hello Hakika, I have a question.")}>WhatsApp us</a>
         </div>
       </footer>

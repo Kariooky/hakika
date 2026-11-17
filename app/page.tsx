@@ -2,6 +2,9 @@ import Jar from "@/components/Jar";
 import OrderForm from "@/components/OrderForm";
 import { IMAGES, waLink } from "@/lib/config";
 
+// White version of the stamp for the dark header and footer
+const LOGO_LIGHT = "/images/logo-white.svg";
+
 const uses = [
   ["On toast", "Thick, with banana or honey."],
   ["In smoothies", "A spoonful makes it creamier and keeps you full."],
@@ -15,7 +18,7 @@ export default function Home() {
       <header>
         <div className="wrap nav">
           <a className="logo" href="#top">
-            {IMAGES.logo && <img src={IMAGES.logo} alt="" width={40} height={40} />}
+            {IMAGES.logo && <img src={LOGO_LIGHT} alt="" width={44} height={44} />}
             Hakika Foods
           </a>
           <nav>
@@ -51,7 +54,7 @@ export default function Home() {
                 <small>Truly, it’s delicious.</small>
               </p>
               {IMAGES.logo && (
-                <img className="stamp" src={IMAGES.logo} alt="Hakika Foods stamp" width={130} height={130} />
+                <img className="stamp" src={IMAGES.logo} alt="Hakika Foods stamp" width={150} height={150} />
               )}
             </div>
           </div>
@@ -115,8 +118,8 @@ export default function Home() {
       <footer>
         <div className="wrap">
           <span className="foot">
-            {IMAGES.logo && <img src={IMAGES.logo} alt="" width={44} height={44} />}
-            © {new Date().getFullYear()} Hakika Foods. Made in Kenya with Kenyan and Tanzanian cashews.
+            {IMAGES.logo && <img src={LOGO_LIGHT} alt="" width={44} height={44} />}
+            © {new Date().getFullYear()} Hakika Foods. Made in Kenya with East African cashews.
           </span>
           <a href={waLink("Hello Hakika, I have a question.")}>WhatsApp us</a>
         </div>

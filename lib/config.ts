@@ -25,7 +25,7 @@ export const IMAGES: {
   jars: Record<string, string | null>;
 } = {
   logo: "/images/logo.svg",
-  heroBg: null, // e.g. "/images/hero-bg.jpg"
+  heroBg: "/images/hero-bg.jpg",
   heroJar: "/images/hero-jar.jpg",
   jars: {
     "370": null, // e.g. "/images/jar-370.png"

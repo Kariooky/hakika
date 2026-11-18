@@ -8,10 +8,10 @@ const body = Manrope({ subsets: ["latin"], variable: "--font-body" });
 export const metadata: Metadata = {
   metadataBase: new URL("https://hakikafoods.com"),
   title: "Hakika Foods – Cashew butter, made in small batches",
-  description: "Cashew butter made in small batches from Tanzanian cashews. Order on WhatsApp. Delivered in Kenya.",
+  description: "Cashew butter made in small batches from East African cashews. Order on WhatsApp. Delivered in Kenya.",
   openGraph: {
     title: "Hakika Foods – Cashew butter",
-    description: "Small-batch cashew butter from Tanzanian cashews. Order on WhatsApp.",
+    description: "Small-batch cashew butter from East African cashews. Order on WhatsApp.",
     type: "website",
   },
 };

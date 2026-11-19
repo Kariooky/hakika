@@ -79,7 +79,7 @@ export default function Home() {
             <h2>A Little Kitchen, A Lot of Love.</h2>
             <div className="prose">
               <p className="lede">Every good thing has a beginning. Ours began with our first baby, who was just eight months old.</p>
-              <p>As new parents, we were discovering the world of introducing our little one to different nuts and seeds. We wanted to make a simple cashew powder that we could incorporate into his meals. One day, my husband decided to put the cashews into a blender, expecting to get just that.</p>
+              <p>As new parents, we were discovering the world of introducing our little one to different nuts and seeds. We wanted to make a simple cashew powder that we could incorporate into his meals. One day, we decided to put the cashews into a blender, expecting to get just that.</p>
               <p>But something unexpected happened.</p>
               <p className="pull">Instead of powder, we got cashew butter!</p>
               <p>What started as a little kitchen experiment quickly became one of our favourite discoveries. We began exploring all the wonderful ways we could enjoy it. On toast, stirred into porridge, blended into smoothies, added to recipes or simply enjoyed by the spoonful. Before long, cashew butter had become a staple in our home.</p>

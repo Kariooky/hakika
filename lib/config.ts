@@ -28,7 +28,7 @@ export const IMAGES: {
   heroBg: "/images/hero-bg.jpg",
   heroJar: "/images/hero-jar.jpg",
   jars: {
-    "370": null, // e.g. "/images/jar-370.png"
-    "730": null, // e.g. "/images/jar-730.png"
+    "370": "/images/jar-370.jpg",
+    "730": "/images/jar-730.jpg",
   },
 };
